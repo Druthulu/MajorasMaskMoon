@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<Name value="MajorasMaskMoon" />
+	<DisplayName value="Majora's Mask Moon" />
+	<Version value="1.2.27.2" />
+	<Description value="replace moon with Majora Mask's moon, client side only. Grows over the course of 7 days and resets each week. Simulates moon crashing into the planet." />
+	<Author value="McTaco" />
+	<Website value="" />
+</xml>
