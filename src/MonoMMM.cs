@@ -5,51 +5,69 @@ public class MonoMMM : MonoBehaviour
 {
     private float timeSinceLastUpdate = 0f; // Timer for update intervals
     private float updateInterval = 5f; // Update interval in seconds
+    int playerId = -1;
 
     void Update()
     {
-        timeSinceLastUpdate += Time.deltaTime;
-
-        if (timeSinceLastUpdate >= updateInterval)
+        if (playerId > 0)
         {
-            //var world = GameManager.Instance.WorldInfo;
-            // var a = world.getgam
-            //var a = GamePrefs.Instance;
-            //var b = a.GetInt(EnumGamePrefs.BloodMoonFrequency);
-            //var c = GamePrefs.GetInt(EnumGamePrefs.BloodMoonFrequency);
-            //int bloodMoonInterval = GamePrefs.GetInt(EnumGamePrefs.BloodMoonFrequency);
-            //int bloodMoonInterval2 = (int)GameInfoInt.BloodMoonFrequency;
-            //var e = GameStats.GetInt(EnumGameStats.BloodMoonDay).ToString();
-            //var f = ConsoleCmdGetGamePrefs.GetCommands();
-            //SortedList<string, string> sortedList = new SortedList<string, string>();
-            /*
-            foreach (EnumGamePrefs enumGamePrefs in EnumUtils.Values<EnumGamePrefs>())
+            timeSinceLastUpdate += Time.deltaTime;
+            if (timeSinceLastUpdate >= updateInterval)
             {
-                if (enumGamePrefs.ToStringCached<EnumGamePrefs>() == "BloodMoonFrequency")
+                //var world = GameManager.Instance.WorldInfo;
+                // var a = world.getgam
+                //var a = GamePrefs.Instance;
+                //var b = a.GetInt(EnumGamePrefs.BloodMoonFrequency);
+                //var c = GamePrefs.GetInt(EnumGamePrefs.BloodMoonFrequency);
+                //int bloodMoonInterval = GamePrefs.GetInt(EnumGamePrefs.BloodMoonFrequency);
+                //int bloodMoonInterval2 = (int)GameInfoInt.BloodMoonFrequency;
+                //var e = GameStats.GetInt(EnumGameStats.BloodMoonDay).ToString();
+                //var f = ConsoleCmdGetGamePrefs.GetCommands();
+                //SortedList<string, string> sortedList = new SortedList<string, string>();
+                /*
+                foreach (EnumGamePrefs enumGamePrefs in EnumUtils.Values<EnumGamePrefs>())
                 {
-                    Log.Out($"[mmm] ---- found it {GamePrefs.GetObject(enumGamePrefs)}----");
-                }
-            }*/
+                    if (enumGamePrefs.ToStringCached<EnumGamePrefs>() == "BloodMoonFrequency")
+                    {
+                        Log.Out($"[mmm] ---- found it {GamePrefs.GetObject(enumGamePrefs)}----");
+                    }
+                }*/
                 //var d = (int)EnumGamePrefs.GetInt(BloodMoonFrequency);
                 //var e = GamePrefs.
                 //Log.Out($"MMM -  blood moon internval {bloodMoonInterval}");
-            //Log.Out($"MMM -  blood moon internval {bloodMoonInterval2}");
-            //Log.Out($"MMM -  blood moon internval {d}");
-            timeSinceLastUpdate = 0f; // Reset the timer
-            /*
-             * This worked, but seems unnesseccary, and if folks are using differnt daylight hours, this would look jank.
-            ulong worldTime = GameManager.Instance.World.worldTime;
-            if (worldTime >= 16000UL || worldTime <= 10000UL)
-            {
-                // night time, more frequent update
-                updateInterval = 5f;
+                //Log.Out($"MMM -  blood moon internval {bloodMoonInterval2}");
+                //Log.Out($"MMM -  blood moon internval {d}");
+                timeSinceLastUpdate = 0f; // Reset the timer
+                /*
+                 * This worked, but seems unnesseccary, and if folks are using differnt daylight hours, this would look jank.
+                ulong worldTime = GameManager.Instance.World.worldTime;
+                if (worldTime >= 16000UL || worldTime <= 10000UL)
+                {
+                    // night time, more frequent update
+                    updateInterval = 5f;
+                }
+                else
+                {
+                    updateInterval = 60f;
+                }
+                */
+                UpdateMoonScale();
             }
-            else
-            {
-                updateInterval = 60f;
-            }
-            */
-            UpdateMoonScale();
+        }
+        else
+        {
+            spawnCheck();
+        }
+    }
+
+    void spawnCheck()
+    {
+        // This will prevent a few safe red errors while loading into a multiplayer server
+        var myPlayerId = GameManager.Instance.myPlayerId;
+        //Log.Out($"my playerId is: {myPlayerId}");
+        if (myPlayerId > 0)
+        {
+            playerId = myPlayerId;
         }
     }
 
