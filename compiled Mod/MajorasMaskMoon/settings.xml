@@ -1,0 +1,9 @@
+<tacoTown>
+	<!--  Scale the moon? true/false-->
+		<scaleMoon>true</scaleMoon>
+	
+	<!--  Frequency of bloodmoon? # of days, 7, 14, 3, etc. Whole Numbers only. This value requires scaleMoon set to true-->
+		<bloodMoonInterval>7</bloodMoonInterval>
+
+	<!-- https://i.imgur.com/DQRZpvF.gif -->
+</tacoTown>

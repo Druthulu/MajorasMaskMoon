@@ -2,8 +2,10 @@
 <xml>
 	<Name value="MajorasMaskMoon" />
 	<DisplayName value="Majora's Mask Moon" />
-	<Version value="1.2.27.2" />
-	<Description value="replace moon with Majora Mask's moon, client side only. Grows over the course of 7 days and resets each week. Simulates moon crashing into the planet." />
+	<Version value="1.2.27.3" />
+	<Description value="replace moon with Majora Mask's moon, client side only. 
+		Grows over the course of 7 days and resets each week. Simulates moon crashing into the planet. 
+		Optional settings.xml to control if scale, and frequncy " />
 	<Author value="McTaco" />
 	<Website value="" />
 </xml>

@@ -1,14 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\git\\7DTD-v1.2-cs.mods\\MajorasMaskMoon\\src\\",
+  "WorkspaceRootPath": "D:\\git\\MajorasMaskMoon\\src\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8541C659-9B69-40A7-99D1-7C273DDCF40A}|MajoraMaskMoon.csproj|d:\\git\\7dtd-v1.2-cs.mods\\majorasmaskmoon\\src\\mmm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8541C659-9B69-40A7-99D1-7C273DDCF40A}|MajoraMaskMoon.csproj|solutionrelative:mmm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8541C659-9B69-40A7-99D1-7C273DDCF40A}|MajoraMaskMoon.csproj|d:\\git\\majorasmaskmoon\\src\\monommm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8541C659-9B69-40A7-99D1-7C273DDCF40A}|MajoraMaskMoon.csproj|solutionrelative:monommm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8541C659-9B69-40A7-99D1-7C273DDCF40A}|MajoraMaskMoon.csproj|D:\\git\\7DTD-v1.2-cs.mods\\MajorasMaskMoon\\src\\monommm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8541C659-9B69-40A7-99D1-7C273DDCF40A}|MajoraMaskMoon.csproj|solutionrelative:monommm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8541C659-9B69-40A7-99D1-7C273DDCF40A}|MajoraMaskMoon.csproj|D:\\git\\MajorasMaskMoon\\src\\mmm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8541C659-9B69-40A7-99D1-7C273DDCF40A}|MajoraMaskMoon.csproj|solutionrelative:mmm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -17,31 +17,31 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "DockedWidth": 167,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "MonoMMM.cs",
-              "DocumentMoniker": "D:\\git\\7DTD-v1.2-cs.mods\\MajorasMaskMoon\\src\\MonoMMM.cs",
+              "DocumentMoniker": "D:\\git\\MajorasMaskMoon\\src\\MonoMMM.cs",
               "RelativeDocumentMoniker": "MonoMMM.cs",
-              "ToolTip": "D:\\git\\7DTD-v1.2-cs.mods\\MajorasMaskMoon\\src\\MonoMMM.cs",
+              "ToolTip": "D:\\git\\MajorasMaskMoon\\src\\MonoMMM.cs",
               "RelativeToolTip": "MonoMMM.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAA+AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAABEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-17T22:52:29.5Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "MMM.cs",
-              "DocumentMoniker": "D:\\git\\7DTD-v1.2-cs.mods\\MajorasMaskMoon\\src\\MMM.cs",
+              "DocumentMoniker": "D:\\git\\MajorasMaskMoon\\src\\MMM.cs",
               "RelativeDocumentMoniker": "MMM.cs",
-              "ToolTip": "D:\\git\\7DTD-v1.2-cs.mods\\MajorasMaskMoon\\src\\MMM.cs",
+              "ToolTip": "D:\\git\\MajorasMaskMoon\\src\\MMM.cs",
               "RelativeToolTip": "MMM.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAQwCgAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-10T04:58:08.841Z",
               "EditorCaption": ""
